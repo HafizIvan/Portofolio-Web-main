@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Perkenalan</title>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1>Hi!</h1>
+            <p>Let Me Introduce Myself</p>
+        </div>        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#wcid">What Can I Do?</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <article id="home" class="home-container">
+            <div class="content-description">
+                <h1>Hallo!</h1>            
+                <p>
+                    Saya sedang berkuliah di Universitas International Batam dan mengambil jurusan Sistem Informasi. Saya memiliki pengalaman yang luas dalam menciptakan VFX yang menakjubkan dan realistis untuk produksi proyek multimedia, sambil memiliki kemampuan dalam pengembangan perangkat lunak dan pemrograman. Menguasai perangkat lunak VFX terkemuka seperti Blender, Adobe After Effects, dan Photoshop, serta memiliki pengetahuan mendalam tentang bahasa pemrograman seperti Python, HTML, CSS, Javascript, dan PHP. Disamping itu saya mampus bekerja dalam tim dan tekanan, dengan kemampuan analitis yang kuat dan ketelitian dalam mecapai visi proyek secara efektif.
+                </p>            
+            </div>            
+            <img src="assets/img/hafiz.jpg" alt="Gambar Penulis"> 
+        </article>
+        <article id="wcid" class="wcid-container">
+            <hr>
+            <h1>What Can I Do?</h1>
+            <p>Berikut adalah list list dari apa yang bisa saya lakukan setelah belajar
+                di Universitas Internatsional Batam, selama 3 tahun.
+            </p>
+            <section class="AEDevelopment-container">                
+                <div class="content-description">
+                    <h1>3D animation , Modelling , VFX</h1>
+                    <p>"Selama tiga tahun terakhir, saya telah mengukir jejak yang mengesankan dalam industri seni digital sebagai seorang 3D artist dan VFX artist. Saya telah berhasil menghasilkan berbagai proyek yang memukau, mulai dari animasi 3D yang realistis hingga efek visual yang mendalam untuk produksi film dan iklan. Pencapaian saya juga termasuk berkontribusi dalam pengembangan proyek-proyek yang memenangkan penghargaan dan menjadi bagian penting dalam tim kreatif yang berdedikasi untuk menciptakan pengalaman visual yang luar biasa bagi penonton."</p>                
+                </div>                
+                <img src="assets/img/after-effects-6347390-5588282.webp" alt="">                           
+            </section>
+            <hr>
+            <section class="webDev-container">
+                <div class="content-description">
+                    <h1>Web Development</h1>
+                    <p>Selama tiga tahun terakhir, saya telah menjalankan peran yang sangat produktif sebagai seorang web developer. Saya telah berhasil merancang, mengembangkan, dan memelihara berbagai jenis situs web yang mencakup beragam industri, mulai dari e-commerce hingga situs berita dan portal perusahaan. Pencapaian saya juga mencakup berkontribusi pada proyek-proyek yang telah meningkatkan pengalaman pengguna, meningkatkan kinerja situs web, dan memastikan keamanan data secara optimal.</p>
+                </div>
+                <img src="assets/img/R.png" alt="">
+            </section>
+            <hr>
+            <section class="backend-container">
+                <div class="content-description">
+                    <h1>Backend Programming</h1>
+                    <p>
+                        Selama tiga tahun terakhir saya telah mempelajari berbagai hal terkait backend programming , dengan menggunakan beberapa software seperti mysql , microsoft sql dan lain sebagainya.</p>
+                </div>
+                <img src="assets/img/sql_icon_by_raisch-d3ax2ih.png" alt="">
+            </section>   
+            <hr>         
+        </article>  
+        <article id="gallery" class="gallery-container">
+            <h1>Gallery</h1>
+            <div class="gallery-slideshow">
+                <img class="slides" src="/assets/img/mario.png" alt="gallery 1">
+                <img class="slides" src="assets/img/Interior.png" alt="gallery 2">
+                <img class="slides" src="assets/img/mamio.jpg" alt="gallery 3">
+                <img class="slides" src="assets/img/eren.jpg" alt="gallery 4">
+                <img class="slides" src="assets/img/sayur.png" alt="gallery 6">
+                <img class="slides" src="assets/img/buah.png" alt="gallery 7">
+                <img class="slides" src="assets/img/simrs1.png" alt="gallery 8">
+                <img class="slides" src="assets/img/simrs2.png" alt="gallery 9">
+            </div>
+            <p>
+                Saya telah mengembangkan dan membuat beberapa website, beberapa Animasi , dan Visual effect Live Action seperti yang tertera pada gambar.
+            </p>
+            <hr>            
+            <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("slides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  slideIndex++;
+                  if (slideIndex > x.length) {slideIndex = 1}
+                  x[slideIndex-1].style.display = "block";
+                  setTimeout(carousel, 4000);
+                }
+            </script>
+        </article>      
+        <div id="card" class="card-container">
+            <section class="port1-container">
+                <div class="card-inside">               
+                    <img src="assets/img/Interior.png" alt="">  
+                    </div>
+                    <div class="content-card">
+                        <h1>Interior Design</h1>
+                        <p>"Ini merupakan interio design yang saya buat dan memenangan perlombaan. ."</p>                
+                    </div>                
+                                         
+            </section>
+            <hr>
+            <section class="port2-container">
+                    <div class="card-inside">  
+                        <img src="assets/img/hashira.jpg" alt="">
+                        </div>
+                        <div class="content-card">
+                            <h1>Hashira of Mist</h1>
+                            <p>Ini adalah pertama kali saya mencoba VFX.</p>
+                        </div>
+            </section>
+            <hr>
+            <section class="port3-container">
+                <div class="card-inside">  
+                    <img src="assets/img/simrs1.png" alt="">
+                    </div>
+                    <div class="content-card">
+                        <h1>Web Development</h1>
+                        <p>Ini adalah pertama kali saya belajar php dengan framework LARAVEL dan menggunakan UI ADMIN LTE , yang terintegrasi dengan database dan dapat digunakan .</p>
+                    </div>
+            </section>
+            <hr>         
+        </div>     
+        
+        <article id="contact" class="contact-us">
+                <h1>Contact US</h1>
+                <p>Berikut adalah list list dari apa yang bisa saya lakukan setelah belajar
+                    di Universitas Internatsional Batam, selama 3 tahun.
+                </p>
+                <section class="contact-container">                
+                    <div class="contact-description">
+                        <form action="form.html"></form>
+                            <label for="nama">Nama Depan</label>
+                            <input type="text" name="namadepan" id="nama" placeholder="Nama Anda">
+                            <label for="email">Email</label>
+                            <input type="text" name="emai" id="email" placeholder="Email Anda">
+                            <label for="nomor">No Telpon</label>
+                            <input type="text" name="nomor" id="nomor" placeholder="nomor Anda">
+
+                            <input type="submit" value="submit">
+                    </div>                                       
+                </section>
+    </main>
+    <footer>
+        <p>&#169 2023, Muhammad Hafiz Ivan Irawan</p>
+    </footer>
+</body>
+</html>

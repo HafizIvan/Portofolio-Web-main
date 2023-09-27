@@ -8,10 +8,11 @@
 
 body {
     box-sizing: border-box;
-    background: linear-gradient(-45deg, #EE7752 , #E73C7E , #23A6D5 , #23D5AB );
+    background: linear-gradient(-45deg, #5b5b5b , #8e8e8e , #181818 , #000000 );
     background-size: 400% 400%;
     position: relative;
     animation: change 10s ease-in-out infinite;
+    color: white;
 
 }
 
@@ -90,16 +91,25 @@ nav a {
     color: #EEEEEE;        
 }
 
-nav li a {
-    font-weight: 400;    
+nav li a {    
     transition: all .2s ease-in-out;
+    padding: 5px 15px;
+    background: linear-gradient(130.08deg, #ff46be 0%, #9bdcfd 100%);
+    box-shadow: 0px 10px 40px #00000070;
+    border: 1px solid #5d0c3f;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: black;
 }
 
 nav li a:hover {
     background-color: #64CCC5;
     padding: 10px;
     font-weight: 700;
-    color: black;
+    color: rgb(255, 255, 255);
+    background: transparent;
 }
 
 .home-container img {    
@@ -342,6 +352,41 @@ footer {
     font-weight: 900;
     padding-block: 20px;
 
+}
+
+.share {
+    margin-bottom: 20px;
+    justify-content: center;
+    bottom: 3rem;
+    left: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.share p {
+    font-size: 17px;
+    color: var(--text-color);
+    margin-right: 25px;
+}
+
+.Social i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 0 7px;
+    transition: all 0.6s ease-in-out;
+    color: white;
+}
+
+.Social i:hover {
+    transform: translateY(-10px);
 }
 
 @media screen and (max-width:425px) {
